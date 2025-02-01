@@ -19,10 +19,7 @@ function jgallery_enqueue_scripts() {
         plugins_url('jgallery.min.js', __FILE__),
         array('jquery'),
         '1.0',
-        [
-            // 'strategy' => 'async',
-            'in_footer' => true
-        ]
+        true
     );
 
     wp_enqueue_script(
@@ -30,10 +27,7 @@ function jgallery_enqueue_scripts() {
         plugins_url('jgallery.init.js', __FILE__),
         array('jquery'),
         '1.0',
-        [
-            // 'strategy' => 'async',
-            'in_footer' => true
-        ]
+        true
     );
 
     // Carrega o CSS do jGallery
@@ -64,7 +58,30 @@ function jgallery_shortcode($atts) {
     // Gera o HTML para o jGallery
     $output = '<div id="jgallery">';
     foreach ($images as $image) {
-        $output .= '<a href="'.site_url(trim($image)).'" class="jgallery-item" data-type="image"><img src="' . site_url(trim($image)) . '" alt=""></a>';
+        $url = trim($image);
+        $poster = '';
+        $youtube = null;
+        $vimeo = null;
+        $mp4 = null;
+        
+        preg_match('/youtube.com/', $url, $youtube);
+        preg_match('/vimeo.com/', $url, $vimeo);
+        preg_match('/.mp4/', $url, $mp4);
+
+        if(strpos($url, ';') !== false){
+            $urlAux = explode(';', $url);
+            $url = trim($urlAux[0]);
+            $poster = trim($urlAux[1]);
+        }        
+        if(!empty($youtube)){
+            $output .= '<a href="'.$url.'" class="jgallery-item" data-type="video"><img src="' . $poster . '" alt=""></a>';    
+        }else if(!empty($vimeo)){
+            $output .= '<a href="'.$url.'" class="jgallery-item" data-type="video"><img src="' . $poster . '" alt=""></a>';    
+        }else if(!empty($mp4)){
+            $output .= '<a href="'.$url.'" class="jgallery-item" data-type="video"><img src="' . $poster . '" alt=""></a>';    
+        }else{
+            $output .= '<a href="'.$image.'" class="jgallery-item" data-type="image"><img src="' . $image . '" alt=""></a>';
+        }
     }
     $output .= '</div>';
 
