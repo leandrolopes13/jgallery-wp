@@ -1,12 +1,22 @@
-# jGallery Wordpress plugin.
+# jGallery
 
-A lightweight and responsive JavaScript image and videos(youtube, vimeo and mp4) gallery library.
+**Contributors:** Leandro Lopes  
+**Tags:** jgallery, gallery, images, videos, lightbox  
+**Requires at least:** WordPress 5.0  
+**Tested up to:** WordPress 6.2  
+**Stable tag:** 0.0.1
+**License:** GPLv2 or later  
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
 ## Sponsor
 
 Publicidade BH - Apps, Sistemas e sites - https://www.publicidadebh.com.br/
 
-## Features
+## Descrição
+
+A lightweight and responsive JavaScript image and videos(youtube, vimeo and mp4) gallery library.
+
+### Funcionalidades Principais
 
 - 🖼️ Responsive image gallery
 - 🚀 Lightweight and fast
@@ -16,70 +26,20 @@ Publicidade BH - Apps, Sistemas e sites - https://www.publicidadebh.com.br/
 - ⌨️ Keyboard navigation
 - 🎯 Easy to integrate
 
-## Installation
+## Instalação
 
-Copy the folder to your wordpress plugins folder and activate it.
+1. Faça o upload do plugin para a pasta `/wp-content/plugins/` ou instale o plugin diretamente pelo painel administrativo do WordPress.
+2. Ative o plugin através do menu 'Plugins' no WordPress.
+3. Configure o plugin conforme necessário nas opções do WordPress.
 
-## Usage
+## Configuração
+
+Após a ativação, o plugin pode ser usado assim:
 
 ```php
 do_shortcode('[jgallery images="http://localhost/jgallery-wp/wp/wp-content/uploads/2025/02/image2.jpg, http://localhost/jgallery-wp/wp/wp-content/uploads/2025/02/image1.jpg, https://vimeo.com/76979871;https://i.vimeocdn.com/video/452001751-8216e0571c251a09d7a8387550942d89f7f86f6398f8ed886e639b0dd50d3c90-d_260x163, https://www.youtube.com/watch?v=4FUnXaq_VWk;https://i3.ytimg.com/vi/4FUnXaq_VWk/hqdefault.jpg"]');
 ```
 
-## Events
-### Resize
-is fired when the content dimensions are recalculated
-```javascript
-.on('jgallery.resize', function (e) {
-	console.log('jgallery.resize');
-})
-```
-### Open
-is fired when the open the lightbox
-```javascript
-.on('jgallery.open', function (e) {
-	console.log('jgallery.open');
-})
-```
-### Change
-is fired when the content is changed
-```javascript
-.on('jgallery.change', function (e) {
-	console.log('jgallery.change');
-})
-```
-### Loaded
-is fired when the content is fully loaded
-```javascript
-.on('jgallery.loaded', function (e) {
-	console.log('jgallery.loaded');
-})
-```
-### Close
-is fired when the lightbox is closed
-```javascript
-.on('jgallery.close', function (e) {
-	console.log('jgallery.close');
-})
-```
+## Licença
 
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-Leandro Lopes - leandrolopes.java@gmail.com - [GitHub Profile](https://github.com/leandrolopes13)
-
-## Acknowledgments
-
-- Thanks to all contributors who have helped make jGallery better
-- Inspired by various gallery libraries in the JavaScript ecosystem
+Este plugin é licenciado sob a GPLv2 ou posterior. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
