@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: jGallery for WordPress
+Plugin Name: jGallery
 Plugin URI: https://github.com/leandrolopes13/jgallery
 Description: Integrates jGallery into WordPress.
 Version: 1.0
