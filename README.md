@@ -23,7 +23,7 @@ Copy the folder to your wordpress plugins folder and activate it.
 ## Usage
 
 ```php
-do_shortcode('[jgallery images="./wp-content/uploads/2025/02/image2.jpg, ./wp-content/uploads/2025/02/image1.jpg"]');
+do_shortcode('[jgallery images="http://localhost/jgallery-wp/wp/wp-content/uploads/2025/02/image2.jpg, http://localhost/jgallery-wp/wp/wp-content/uploads/2025/02/image1.jpg, https://vimeo.com/76979871;https://i.vimeocdn.com/video/452001751-8216e0571c251a09d7a8387550942d89f7f86f6398f8ed886e639b0dd50d3c90-d_260x163, https://www.youtube.com/watch?v=4FUnXaq_VWk;https://i3.ytimg.com/vi/4FUnXaq_VWk/hqdefault.jpg"]');
 ```
 
 ## Events
