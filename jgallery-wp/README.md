@@ -1,21 +1,19 @@
 # jGallery
 
 **Contributors:** Leandro Lopes  
+**Donate link:** https://buymeacoffee.com/leandrolopes13
 **Tags:** jgallery, gallery, images, videos, lightbox  
-**Short Description:** A lightweight and responsive JavaScript image and videos(youtube, vimeo and mp4) gallery library.
+**Description:** A lightweight and responsive JavaScript image and videos(youtube, vimeo and mp4) gallery library.
 **Requires at least:** WordPress 5.0  
 **Tested up to:** WordPress 6.7  
 **Stable tag:** 1.0.0
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
+A lightweight and responsive JavaScript image and videos(youtube, vimeo and mp4) gallery library.
 
 ## Sponsor
 
 Publicidade BH - Apps, Sistemas e sites - https://www.publicidadebh.com.br/
-
-## Descrição
-
-A lightweight and responsive JavaScript image and videos(youtube, vimeo and mp4) gallery library.
 
 ### Funcionalidades Principais
 
