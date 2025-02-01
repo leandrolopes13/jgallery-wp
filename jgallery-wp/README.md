@@ -2,9 +2,10 @@
 
 **Contributors:** Leandro Lopes  
 **Tags:** jgallery, gallery, images, videos, lightbox  
+**Short Description:** A lightweight and responsive JavaScript image and videos(youtube, vimeo and mp4) gallery library.
 **Requires at least:** WordPress 5.0  
-**Tested up to:** WordPress 6.2  
-**Stable tag:** 0.0.1
+**Tested up to:** WordPress 6.7  
+**Stable tag:** 1.0.0
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
