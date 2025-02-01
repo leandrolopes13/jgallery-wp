@@ -3,7 +3,7 @@
 Plugin Name: jGallery
 Plugin URI: https://github.com/leandrolopes13/jgallery
 Description: Integrates jGallery into WordPress.
-Version: 1.0
+Version: 1.0.0
 Author: Leandro Lopes
 Author URI: https://github.com/leandrolopes13/
 License: GPL2
